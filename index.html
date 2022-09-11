@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+    <script src="script.js"></script>
+</head>
+
+<body id="rps">
+    <h1>Rock Paper Scissors</h1>  
+    
+    <div id="newGame">
+        <div id="startBtms">
+            <button id="btm">New Game!</button>
+            <button id="endBtm">End Game.</button>
+        </div>
+        <button ><a href="results.html">Results</a></button>
+    </div>
+
+    <div class="container">
+        <div class="press" id="rockContainer">
+            <img id="rock" alt="ROCK" src="./images/rock.jpg"> 
+        </div>
+        <div class="press" id="paperContainer">
+            <img id="paper" alt="PAPER" src="./images/paper.jpg">
+        </div>
+        <div class="press" id="scissorsContainer">
+            <img id="scissors" alt="paper" src="./images/scissors.jpg"> 
+        </div>
+    </div>
+
+    <div class="tabellone">
+        <div id="giocata">
+            <div class="player" id="you">
+                <div class="text">YOU:</div>
+                <div class="press" id="youPress"></div>
+            </div>
+            <div class="player" id="computer">
+                <div class="text">COMPUTER:</div>
+                <div class="press" id="computerPress"></div>
+            </div>
+        </div>
+        <div id="bottomPage">
+            <div id="vincitore">
+                <div class="text" id="winner">ROUND WINNER:</div>
+            </div>
+            <div id="score">
+                <div class="text" id="result">SCORE:</div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

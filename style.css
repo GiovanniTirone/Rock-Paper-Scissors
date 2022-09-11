@@ -1,0 +1,179 @@
+html {
+    
+    font-size: 10px;
+    background: url('./background.jpg') bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    
+  }
+
+  
+  body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+  }
+
+  h1{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    margin-bottom: 10px;
+    max-height: 50px;
+  }
+  
+  .container {
+    display: flex;
+    flex: 1;
+    margin-top: 20px;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .press {
+    display: flex;
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    text-align: center;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+  }
+
+   img{
+    display: flex;
+    flex: 1; 
+    max-width: 150px;
+    max-height: 150px;
+   }
+  
+   #paper{
+    display: flex;
+    margin-top: 30px;
+   }
+
+   .tabellone{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    padding: 10px;
+   }
+
+   #giocata{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .text{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: larger;
+   }
+
+   #bottomPage{
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+    flex-direction: column;
+    
+   }
+   .playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
+  
+  kbd {
+    display: block;
+    font-size: 4rem;
+  }
+  
+  .sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+  }*/
+
+  #winner{
+    display: flex;
+    flex-direction: row;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    max-width: 100px;
+    margin: 5px;
+    padding: 4px;
+  }
+
+  #newGame{
+    display: flex;
+    justify-content: center;
+  }
+
+  .loser{
+    filter: grayscale(100%); 
+    -webkit-filter: grayscale(100%);
+    
+  }
+
+  .playingWinner {
+    transform: scale(1.1);
+    border-color:red;
+    box-shadow: 0 0 1rem red;
+  }
+  
+  #newGame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:5px;
+    
+  }
+
+    a{
+    text-decoration: none;
+    color: black;
+  }
+
+  table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th, td{
+    padding: 10px 20px;
+    border: 1px solid #000;
+}
+
+#t{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex:1;
+  margin: 100px;
+  padding: 50px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#rockContainer, #paperContainer, #scissorsContainer {
+  pointer-events:none;
+}
+
+#startBtms {
+  display: flex;
+}

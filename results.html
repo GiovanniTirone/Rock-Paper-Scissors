@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="results" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+   <!-- <script src="script.js"></script> -->
+</head>
+
+<body id="results">
+    <div id="t"><h1>Results:</h1></div>
+    <script>
+        const tabString = localStorage.getItem('tab');
+        console.log(tabString);
+        let tabArr = tabString.split(',');
+        console.log(tabArr);
+    if(tabArr.length>0){
+        let rowNumber = tabArr.length/5;
+        let tableRes = document.createElement('table');
+        let thead = document.createElement('thead');
+        let tbody = document.createElement('tbody');
+        tableRes.appendChild(thead);
+        tableRes.appendChild(tbody);
+        let row_1 = document.createElement('tr');
+        let heading_1 = document.createElement('th');   
+        heading_1.innerHTML = "Game Number";
+        let heading_2 = document.createElement('th');
+        heading_2.innerHTML = "Number of rounds";
+        let heading_3 = document.createElement('th');
+        heading_3.innerHTML = "You";
+        let heading_4 = document.createElement('th');
+        heading_4.innerHTML = "Computer";
+        let heading_5 = document.createElement('th');
+        heading_5.innerHTML = "Patta";
+        row_1.appendChild(heading_1);
+        row_1.appendChild(heading_2);
+        row_1.appendChild(heading_3);
+        row_1.appendChild(heading_4);
+        row_1.appendChild(heading_5);
+        thead.appendChild(row_1);
+        for(i=0; i< rowNumber ; i++){
+                let row_2 = document.createElement('tr');
+                let row_2_data_1 = document.createElement('td');
+                let row_2_data_2 = document.createElement('td');
+                let row_2_data_3 = document.createElement('td');
+                let row_2_data_4 = document.createElement('td');
+                let row_2_data_5 = document.createElement('td');
+            for(j=0; j<5 ; j++){
+                row_2_data_1.innerHTML = tabArr[5*i]; 
+                row_2_data_2.innerHTML = tabArr[5*i+1]; 
+                row_2_data_3.innerHTML = tabArr[5*i+2]; 
+                row_2_data_4.innerHTML = tabArr[5*i+3];
+                row_2_data_5.innerHTML = tabArr[5*i+4];
+            };
+                row_2.appendChild(row_2_data_1);
+                row_2.appendChild(row_2_data_2);
+                row_2.appendChild(row_2_data_3);
+                row_2.appendChild(row_2_data_4);
+                row_2.appendChild(row_2_data_5);
+                tbody.appendChild(row_2);
+        };
+        console.log(tableRes);
+        let ta = document.querySelector("#t");
+        ta.appendChild(tableRes);
+    };
+    </script>
+    
+</body>
+</html>
